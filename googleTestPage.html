@@ -2,22 +2,43 @@
 
 <style>
     .center {
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-         width: 50%;
     }
+
+    #google-logo {
+        width: 50%;
+        padding-top: 300px;
+        padding-right: 0px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+
+    #search-bar {
+        width: 30%;
+        padding-top: 3px;
+        padding-right: 0px;
+        padding-bottom: 3px;
+        padding-left: 0px;
+    }
+
+    #search-btn {
+        padding-top: 0px;
+    }
+    
 </style>
 
 <html>
 <body>
     <div>
-        <img  class="center" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="gogle logo">
+        <img  class="center" id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="gogle logo">
     </div>
 
    <form>
-       <input class="center" type="text" value="Enter your search here!" onfocus="this.value=''"> <input class="center" type="submit" value="Search">
+       <input class="center" id="search-bar" type="text" value="Enter your search here!" onfocus="this.value=''" > 
+       <input class="center" id="search-btn" type="submit" value="Search">
    </form>
 </body>
 </html>
