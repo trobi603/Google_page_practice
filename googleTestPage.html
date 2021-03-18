@@ -9,7 +9,7 @@
     }
 
     #google-logo {
-        width: 90%;
+        width: 350px;;
         padding-top: 250px;
         padding-right: 0px;
         padding-bottom: 5px;
@@ -17,17 +17,19 @@
     }
 
     #search-bar {
-        width: 30%;
+        width: 260px;
         padding-top: 3px;
         padding-right: 0px;
         padding-bottom: 3px;
         padding-left: 0px;
+        position: relative;
+        left: -30px;
     }
 
     #search-btn {
         padding-top: 0px;
         position: relative;
-        left: 120px;
+        left: 140px;
         top: -22px;
     }
     
@@ -40,8 +42,10 @@
     </div>
 
    <form>
-       <input class="center" id="search-bar" type="text" value="Enter your search here!" onfocus="this.value=''" > 
-       <input class="center" id="search-btn" type="submit" value="Search">
-   </form>
+        <div>
+            <input class="center" id="search-bar" type="text" value="Enter your search here!" onfocus="this.value=''" > 
+            <input class="center" id="search-btn" type="submit" value="Search">
+        </div>        
+    </form>
 </body>
 </html>
