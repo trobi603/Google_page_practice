@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 
 <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        padding: 5px;
+    }
+
     .center {
-        display: flex;
+        display: block;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
     }
 
     #google-logo {
-        width: 350px;;
+        width: 400px;;
         padding-top: 250px;
         padding-right: 0px;
         padding-bottom: 5px;
         padding-left: 0px;
     }
 
+    #search-form {
+        position: relative;
+        left: 25px;
+    }
+
     #search-bar {
-        width: 260px;
+        width: 290px;
         padding-top: 3px;
         padding-right: 0px;
         padding-bottom: 3px;
         padding-left: 0px;
         position: relative;
-        left: -30px;
+        left: -40px;
+        border: solid black thin;
+        border-radius: 10px;
     }
 
     #search-btn {
@@ -36,16 +60,27 @@
 </style>
 
 <html>
-<body>
-    <div>
-        <img  class="center" id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="gogle logo">
-    </div>
-
-   <form>
+    <head>
+        <title>Google homepage for search</title>
+    </head>
+    <body>
+        <ul>
+            <li>About</li>
+            <li>Store</li>
+            <li style="float:right">Sign In</li>
+            <li style="float:right">L7</li>
+            <li style="float:right">Images</li>
+            <li style="float:right">Gmail</li>
+        </ul>
         <div>
-            <input class="center" id="search-bar" type="text" value="Enter your search here!" onfocus="this.value=''" > 
-            <input class="center" id="search-btn" type="submit" value="Search">
-        </div>        
-    </form>
-</body>
+         <img  class="center" id="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="gogle logo">
+        </div>
+
+        <form id="search-form">
+            <div>
+                <input class="center" id="search-bar" type="text" value=" Enter your search here!" onfocus="this.value=''" > 
+                <input class="center" id="search-btn" type="submit" value="Search">
+            </div>        
+        </form>
+    </body>
 </html>
